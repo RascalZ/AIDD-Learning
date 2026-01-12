@@ -78,4 +78,12 @@ git add 文件名
 git commit -m "备注"
 
 git push
+
+#增大 Git 的传输缓冲区
+git config --global http.postBuffer 524288000
+
+#手动告诉 Git 走代理
+git config --global http.proxy http://127.0.0.1:7890
+git config --global https.proxy http://127.0.0.1:7890
 ```
+
